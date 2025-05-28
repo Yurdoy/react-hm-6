@@ -22,9 +22,9 @@ const UserProfile = () => {
   }, []);
 
   return (
-    <div className={cls}>
+    <div>
       {userStatus ? (
-        <div>
+        <div className={cls.user_profile}>
           <img src={userStatus.picture.large} alt="User Profile" />
           <h2>
             {userStatus.name.first} {userStatus.name.last}
